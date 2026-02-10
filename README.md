@@ -1,25 +1,25 @@
 # Rhino-inside-DOOM
-> **"Yes... Rhino can run DOOM."**
 
-**Rhino-inside-DOOM** is a proof-of-concept project that implements a DOOM-style raycasting engine directly within the **Rhino 3D** viewport using **Grasshopper** and **Python**.
+> "Yes... Rhino can run DOOM."
 
-This is not just a game; it is a computational design study on how to port spatial logic and rendering algorithms into an architectural modeling environment.
+![Status](https://img.shields.io/badge/Status-Prototype-orange?style=flat-square)
+![Language](https://img.shields.io/badge/Language-Python-blue?style=flat-square)
+![Platform](https://img.shields.io/badge/Platform-Rhino_7%2F8-black?style=flat-square)
+
+![Header Image](header_image.png)
+### **Concept**
+**Rhino-inside-DOOM** is a pure Python implementation of a **Raycasting Engine** (Wolfenstein 3D style) running directly within the **Rhino 3D** viewport.
+It bridges the gap between architectural spatial logic and retro game mechanics, utilizing Rhino's geometry kernel for rendering.
+
+### **Features**
+* **Raycasting Core:** Custom `raycasting.py` algorithm without external game engines.
+* **Viewport Rendering:** Dynamic mesh/conduit drawing in Rhino.
+* **Input Hook:** `ctypes` based WASD keyboard control.
+
+### **How to Run**
+1.  Open `Rhino_DOOM_Core.gh` in Grasshopper.
+2.  Set the Boolean Toggle to **True**.
+3.  **Rip and Tear.** (Move with WASD)
 
 ---
-
-Concept
-A proof-of-concept project implementing a Raycasting Engine directly inside Rhino 3D & Grasshopper using pure Python. No external game engines, just pure geometry logic.
-
-Features
-Core Logic: Raycasting algorithm implemented in Python script.
-
-Display: Dynamic mesh generation in Rhino Viewport.
-
-Control: Real-time navigation via ctypes (WASD support).
-
-How to Run
-Open Rhino_Doom.gh in Grasshopper.
-
-Set Boolean Toggle to True.
-
-Rip and Tear. (Move with WASD)
+*Disclaimer: This is a technical proof-of-concept. Performance depends on your single-core CPU speed. Frame drops are part of the experience.*
